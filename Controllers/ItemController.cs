@@ -61,8 +61,7 @@ namespace XpressKuponXpressKupon.Controllers
 			}
 			else
 			{
-				var existingItem = ItemManager.Instance.GetItem(item.GiftCardId);
-				//itt valami szar				
+				var existingItem = ItemManager.Instance.GetItem(item.GiftCardId);				
 				existingItem.CardNumber = item.CardNumber;
 				existingItem.Amount = item.Amount;
 				existingItem.UsedAmount = item.UsedAmount;
